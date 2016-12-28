@@ -1,0 +1,30 @@
+<h2>Les Auteurs</h2>
+<div>
+  <p><label>Nom de l'auteur:</label> <input #heroName /></p>
+  <p><label>mail de l'auteur:</label> <input #heroMail /></p>
+  <button (click)="add(heroName.value, heroMail.value); heroName.value=''; heroMail.value=''">
+    Ajouter
+  </button>
+</div>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
+      [class.selected]="hero === selectedHero">
+    <span class="badge">{{hero.id}}</span>
+    <span>{{hero.nom}}</span>
+    <button class="delete"
+      (click)="delete(hero); $event.stopPropagation()">x</button>
+  </li>
+</ul>
+<div *ngIf="selectedHero">
+  <h2>
+    {{selectedHero.nom | uppercase}} est un auteur
+  </h2>
+  <button (click)="gotoDetail()">Vue détailé</button>
+</div>
+
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

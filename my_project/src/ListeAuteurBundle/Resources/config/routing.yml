@@ -1,0 +1,12 @@
+liste_auteur_homepage:
+    path:     /
+    defaults: { _controller: ListeAuteurBundle:Default:index }
+   
+
+hello_the_world:
+    path:     /hello-world
+    defaults: { _controller: ListeAuteurBundle:Advert:index }
+
+auteur:
+    path:     /auteur 
+    defaults: {_controller: ListeAuteurBundle:Advert:index }

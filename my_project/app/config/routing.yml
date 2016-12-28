@@ -1,0 +1,7 @@
+liste_auteur:
+    resource: "@ListeAuteurBundle/Controller/"
+    type:   annotation
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

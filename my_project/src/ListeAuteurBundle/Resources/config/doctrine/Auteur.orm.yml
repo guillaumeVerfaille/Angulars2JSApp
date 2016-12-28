@@ -1,0 +1,18 @@
+ListeAuteurBundle\Entity\Auteur:
+    type: entity
+    table: null
+    repositoryClass: ListeAuteurBundle\Repository\AuteurRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        mail:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

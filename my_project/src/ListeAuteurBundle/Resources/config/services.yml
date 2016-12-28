@@ -1,0 +1,4 @@
+services:
+#    liste_auteur.example:
+#        class: ListeAuteurBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
